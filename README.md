@@ -1,0 +1,1 @@
+# parcer-electron-typescript-main-process-build-sample
