@@ -1,1 +1,1 @@
-# parcer-electron-typescript-main-process-build-sample
+# parcel-electron-typescript-build-main-process-sample

@@ -1,0 +1,30 @@
+{
+  "name": "parcel-electron-typescript-build-main-process-sample",
+  "version": "0.0.1",
+  "main": "main.js",
+  "scripts": {
+    "prestart": "yarn build:main",
+    "start": "run-p electron parcel",
+    "electron": "electron .",
+    "parcel": "parcel src/renderer/index.html -p 1124",
+    "build:main": "parcel build src/main/main.ts -d ./ --target=electron --out-file=main.js",
+    "build:renderer": "parcel build src/renderer/index.html --public-url ./"
+  },
+  "repository": "git@github.com:MegaBlackLabel/parcel-electron-typescript-process-build-sampleypescript-main.git",
+  "author": "底なし沼の魔女 <megablacklabel@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "app-root-path": "^2.0.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "typescript": "^2.7.2"
+  },
+  "devDependencies": {
+    "@types/react": "^16.0.38",
+    "@types/react-dom": "^16.0.4",
+    "electron": "^1.8.2",
+    "electron-is-dev": "^0.3.0",
+    "npm-run-all": "^4.1.2",
+    "parcel-bundler": "^1.6.2"
+  }
+}
